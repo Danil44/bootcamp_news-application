@@ -1,0 +1,37 @@
+<Card>
+  <form className="{classes.form}" onSubmit="{submitHandler}">
+    <div className="{classes.control}">
+      <label htmlFor="title">Title</label>
+      <input type="text" required id="title" />
+    </div>
+    <div className="{classes.control}">
+      <label>category</label>
+
+      <ul>
+        <li>
+          <label for="general">general</label>
+          <input type="checkbox" required id="general" />
+        </li>
+        <li>
+          <label for="sports">sports</label>
+          <input type="checkbox" required id="sports" />
+        </li>
+        <li>
+          <label for="politics">politics</label>
+          <input type="checkbox" required id="politics" />
+        </li>
+      </ul>
+    </div>
+    <div className="{classes.control}">
+      <label htmlFor="description">Description</label>
+      <textarea id="description" required rows="5"></textarea>
+    </div>
+    <div className="{classes.control}">
+      <label htmlFor="author">author</label>
+      <input id="author" required />
+    </div>
+    <div className="{classes.actions}">
+      <button>Submit</button>
+    </div>
+  </form>
+</Card>
